@@ -111,13 +111,19 @@ Please see the table below for a summary of all the sources I read.
 |Title|High-precision prediction of blood glucose concentration utilizing Fourier transform Raman spectroscopy and an ensemble machine learning algorithm|
 |------|-----|
 |Year|2023|
-|Preparation|The blood glucose concentrations of the samples ranged from 4.12 mmol/L - 16.32 mmol/L from hospital|
+|Preparation|1. The blood glucose concentrations of the samples ranged from 4.12 mmol/L - 16.32 mmol/L from hospital|
+|      |2. 106 blood samples are separated into 2 groups, the first for the clinical standard testing of blood glucose concentration (32 samples)|
+|      |The second group of samples was scanned using Raman spectroscopy to obtain the whole blood Raman spectrum (32 samples)|
+|      |** the rests are for training on model (42 samples)|
 |Instrument|1. Raman spectrometer|
 |      |The output power of 1064 nm excitation radiation is 90 mW |
-|      |The spectrum range is from 400 cm−1 to 4000 cm−1 |
-|Method|Bagging-ABC-ELM prediction model|
-|Preprocessing|1. Baseline correction:|
-|      |2. Denoising: Savitzky-Golay method|
+|      |The spectrum range is from 400 $cm^{−1}$ to 4000 $cm^{−1}$ |
+|      |The output power of 1064 nm excitation radiation is 90 mW in the experiment.|
+|      |Each sample is scanned at a spectral resolution of 6 $cm^{-1}$|
+|Method|1. Bagging-ABC-ELM prediction model|
+|      |2. PLSR (Partial Least Squares Regression) and SVR (Support Vector Regression) models were constructed as traditional methods for comparison.|
+|      |** They performed three measuements on every sample for improving accuracy|
+|Preprocessing|1. Baseline correction: Savitzky-Golay denoising|
 |      |3. PCA: employed to extract key information from the spectral data and simplify the model input.|
 |      |** A total of 24 principal components were selected to represent the original spectral data.|
 |Results|The mean values of $R^2$ and RMSEP for the proposed model were 0.9928 and 0.1928|
