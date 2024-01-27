@@ -63,3 +63,61 @@ Please see the table below for a summary of all the sources I read.
 |Results|The experiment indicated that Raman spectroscopy holds promise as a non-invasive method for diabetic sugar concentration in human blood, providing detailed biochemical information and diagnostic benefits in a clinical setting.|
 
 
+
+
+
+# 4. Simultaneous detection of glucose, triglycerides, and total cholesterol in whole blood by Fourier-Transform Raman spectroscopy
+|Title|Simultaneous detection of glucose, triglycerides, and total cholesterol in whole blood by Fourier-Transform Raman spectroscopy|
+|------|-----|
+|Year|2021|
+|Preparation|161 blood samples from Qingdao Hospital was collected by venipuncture into vacutainer blood collection tubes containing 0.2% Ethylenediaminetetraacetic acid (EDTA) as an anticoagulant.|
+|Instrument|Raman spectra at 1064 nm excitation radiation(Nd:YAG laser with the maximum output power of 500mW) were recorded with a FT-Raman Bruker MultiRAM spectrometer (BrukerOptics, Germany)|
+|Method|-----|
+|Preprocessing|1. Baseline correction+PLS|
+|      |2. Orthogonal Signal Correction(OSC)|
+|      |3. Mehalanobis Distance Algorithm|
+|      |4. Sample partition: SPXY algorithm|
+|Results|The results showed that the proposed method accurately predicted the concentration of glucose, total cholesterol (TC), and triglycerides (TG) in blood.|
+
+
+
+
+
+# 5. Quantitative analysis of human blood serum using vibrational spectroscopy
+|Title|Quantitative analysis of human blood serum using vibrational spectroscopy|
+|------|-----|
+|Year|2020|
+|Preparation|Centrifugal Filtration: The human blood serum samples were subjected to centrifugal filtration using Amicon Ultra-0.5 mL centrifugal filter devices with a specific molecular weight cutoff.|
+|Instrument|1. Horiba Jobin-Yvon LabRAM HR800 spectrometer |
+|      |2. Olympus IX71 inverted microscope|
+|      |3. X60 water immersion objective|
+|      |4. Two different laser sources were used: a 532 nm laser and a 785 nm laser|
+|Method|Vibrational spectroscopy|
+|      |1. FTIR|
+|      |2. Raman Spectroscopy|
+|Preprocessing|1. Smoothing: the Savitzky–Golay method|
+|      |2. Baseline Correction: The rubberband method |
+|      |3. Remove spectral interferents: EMSC|
+|      |4. Reference Spectra: were used for EMSC and as a basis for quantification.|
+|Results|The paper provides evidence of the potential of Raman spectroscopy for the quantitative analysis of human blood serum constituents.|
+
+
+
+
+
+
+# 6. High-precision prediction of blood glucose concentration utilizing Fourier transform Raman spectroscopy and an ensemble machine learning algorithm
+
+|Title|High-precision prediction of blood glucose concentration utilizing Fourier transform Raman spectroscopy and an ensemble machine learning algorithm|
+|------|-----|
+|Year|2023|
+|Preparation|The blood glucose concentrations of the samples ranged from 4.12 mmol/L - 16.32 mmol/L from hospital|
+|Instrument|1. Raman spectrometer|
+|      |The output power of 1064 nm excitation radiation is 90 mW |
+|      |The spectrum range is from 400 cm−1 to 4000 cm−1 |
+|Method|Bagging-ABC-ELM prediction model|
+|Preprocessing|1. Baseline correction:|
+|      |2. Denoising: Savitzky-Golay method|
+|      |3. PCA: employed to extract key information from the spectral data and simplify the model input.|
+|      |** A total of 24 principal components were selected to represent the original spectral data.|
+|Results|The mean values of $R^2$ and RMSEP for the proposed model were 0.9928 and 0.1928|
