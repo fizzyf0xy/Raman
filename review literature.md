@@ -87,19 +87,26 @@ Please see the table below for a summary of all the sources I read.
 |Title|Quantitative analysis of human blood serum using vibrational spectroscopy|
 |------|-----|
 |Year|2020|
-|Preparation|Centrifugal Filtration: The human blood serum samples were subjected to centrifugal filtration using Amicon Ultra-0.5 mL centrifugal filter devices with a specific molecular weight cutoff.|
+|Preparation|Centrifugal Filtration: The human blood serum samples (n=25) were subjected to centrifugal filtration using Amicon Ultra-0.5 mL centrifugal filter devices with a specific molecular weight cutoff.|
+|      |** the samples were collected during routine blood check-ups, 1 mL of the vial remains being provided for further spectroscopic analysis.|
 |Instrument|1. Horiba Jobin-Yvon LabRAM HR800 spectrometer |
 |      |2. Olympus IX71 inverted microscope|
-|      |3. X60 water immersion objective|
+|      |3. X60 water immersion objective (LUMPlanF1, Olympus)|
 |      |4. Two different laser sources were used: a 532 nm laser and a 785 nm laser|
+|      |* In all experiments, a 300 lines/mm grating was used|
+|      |* The confocal hole was set at 100 mm for all measurements, the specified setting for confocal operation.|
 |Method|Vibrational spectroscopy|
-|      |1. FTIR|
+|      |1. ATR-FTIR|
 |      |2. Raman Spectroscopy|
 |Preprocessing|1. Smoothing: the Savitzky–Golay method|
 |      |2. Baseline Correction: The rubberband method |
 |      |3. Remove spectral interferents: EMSC|
 |      |4. Reference Spectra: were used for EMSC and as a basis for quantification.|
 |Results|The paper provides evidence of the potential of Raman spectroscopy for the quantitative analysis of human blood serum constituents.|
+|      |Comparison of the results of ATR-FTIR and Raman spectroscopic of patient sample set for monitoring glucose levels are divided as below,|
+|      |ATR-FTIR $R^2$ = 0.9957 in concentrartion range 61.25-210 mg/dL|
+|      |Raman Spectroscopy $R^2$ = 0.91 in concentrartion range 52.25-210 mg/dL|
+|      |Raman Spectroscopy $R^2$ = 0.84 in concentrartion range 52.25-440 mg/dL|
 
 
 
