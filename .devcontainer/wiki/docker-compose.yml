@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     platform: linux/amd64
-    volumes:
-      - ../../:/workspaces/Raman:cached
+    # volumes:
+    #   - ../../:/workspaces/Raman:cached
 
     command: sleep infinity 
 

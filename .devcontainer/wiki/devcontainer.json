@@ -4,12 +4,12 @@
 	"name": "Wiki",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "wiki",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"workspaceFolder": "/workspaces/wiki",
 
 	// Use this environment variable if you need to bind mount your local source code into a new container.
-	"remoteEnv": {
-		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
-	},
+	// "remoteEnv": {
+	// 	"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+	// },
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -22,8 +22,8 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "gh repo clone https://github.com/fizzyf0xy/Raman.wiki.git"
+	"postCreateCommand": "git clone https://github.com/fizzyf0xy/Raman.wiki.git",
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "root"
 }
