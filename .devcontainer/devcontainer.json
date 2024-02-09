@@ -1,9 +1,9 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-outside-of-docker-compose
 {
-	"name": "Docker from Docker Compose",
+	"name": "LaTex",
 	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"service": "latex",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	// Use this environment variable if you need to bind mount your local source code into a new container.
