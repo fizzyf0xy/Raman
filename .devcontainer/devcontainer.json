@@ -11,14 +11,20 @@
 		"LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
 	},
 
-	"features": {
-		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
-			"version": "latest",
-			"enableNonRootDocker": "true",
-			"moby": "true"
-		},
-		"ghcr.io/prulloac/devcontainer-features/latex:1": {
-			"scheme": "full"
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+	// 		"version": "latest",
+	// 		"enableNonRootDocker": "true",
+	// 		"moby": "true"
+	// 	}
+	// },
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"James-Yu.latex-workshop",
+				"michelemelluso.gitignore",
+				"yzhang.markdown-all-in-one"
+			]
 		}
 	}
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
