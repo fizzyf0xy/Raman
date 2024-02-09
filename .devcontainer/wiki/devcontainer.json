@@ -14,7 +14,8 @@
 		"vscode": {
 			"extensions": [
 				"michelemelluso.gitignore",
-				"yzhang.markdown-all-in-one"
+				"yzhang.markdown-all-in-one",
+				"znck.grammarly"
 			]
 		}
 	},

@@ -5,3 +5,6 @@
 *.aux
 *.lof
 *.lot
+*.bbl
+*.blg
+*.toc

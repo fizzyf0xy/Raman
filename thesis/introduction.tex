@@ -2,86 +2,135 @@
 
 \section{Background of the Study}
 
-Diabetes is a metabolic disease that manifests as high blood glucose levels, leading to the degeneration of vital tissues and organ systems, such as the eyes, kidneys, and heart (H.Wu et al.,2022)(J.Wei et al.,2022). Monitoring blood glucose concentration levels in clinical therapy is one of the most effective approaches to postpone or avoid diabetic complications. The traditional finger-pick testing is invasive, and painful, and this method will increase the risk of infection (L.Tang et al.,2020). 
+Diabetes is a metabolic disease that manifests as high blood glucose levels, leading to the degeneration of vital tissues and organ systems, such as the eyes, kidneys, and heart (H.Wu et al.,2022)(J.Wei et al.,2022). 
+Monitoring blood glucose concentration levels in clinical therapy is one of the most effective approaches to postpone or avoid diabetic complications. 
+Traditional finger-pick testing is invasive and painful, and this method will increase the risk of infection (L.Tang et al.,2020). 
 
-From the foregoing, there is a great demand for non-invasive, sensitive, robust, and continuous blood glucose monitoring methods. Several studies have proposed Raman spectroscopy as a non-invasive method for detecting blood glucose concentration (N.Li et al.,2019)(A.Pors et al.,2023). According to the complexity of the raw spectrum acquired by Raman spectroscopy detection (e.g. fluorescence artifacts, spectral data from sample slide), chemometric techniques are necessary to extract the most relevant dateset from complicated Raman spectral data. However, this is typically mitigated by altering the laser intensity or measuring times.
+From the foregoing, there is a great demand for non-invasive, sensitive, robust, and continuous blood glucose monitoring methods. 
+Several studies have proposed Raman spectroscopy as a non-invasive method for detecting blood glucose concentration (N.Li et al.,2019)(A.Pors et al.,2023). 
+According to the complexity of the raw spectrum acquired by Raman spectroscopy detection (e.g. fluorescence artifacts, spectral data from sample slide), chemometric techniques are necessary to extract the most relevant dateset from complicated Raman spectral data. 
+However, this is typically mitigated by altering the laser intensity or measuring times.
 
-Shao et al. (2012) demonstrated a high correlation ($R^2 = 0.91$) on Raman spectra between glucose solution content and ISF measured at mouse ear. Kang et al. (2020) developed a novel method for extracting glucose scattering by subtracting two Raman signals from two separate time intervals as a direct assessment of glucose in blood. Furthermore, they confirmed that the glucose peak ($1125cm^{-1}$) should be balanced with the protein and lipid peak ($1450cm^{-1}$) in order to correctly quantify the glucose concentration in blood. Using Raman spectra from a pig's ear, they established an $R^2 = 0.91$ correlation between actual and projected glycemic levels.
+Shao et al. (2012) demonstrated a high correlation ($R^2 = 0.91$) on Raman spectra between glucose solution content and ISF measured at mouse ear. 
+Kang et al. (2020) developed a novel method for extracting glucose scattering by subtracting two Raman signals from two separate time intervals as a direct assessment of glucose in blood. 
+Furthermore, they confirmed that the glucose peak ($1125cm^{-1}$) should be balanced with the protein and lipid peak ($1450cm^{-1}$) to correctly quantify the glucose concentration in blood. 
+Using Raman spectra from a pig's ear, they established an $R^2 = 0.91$ correlation between actual and projected glycemic levels.
 
-A further important factor is the location of the measurement. As prospective measuring sites, the forearm (Enejder et al., 2005; Scholtes-Timmerman, Bijlsma, Fokkert, Slingerland, and Veen, 2014), thenar (Lundsgaard-Nielsen and al., 2018), and nail fold (Li et al., 2019) have been chosen. While González Viveros et al. (2022) found that the forearm is the most effective location when compared to the wrist and index finger, it is unclear which site is the best owing to differences in equipment, parameters, and technique (e.g., how to preprocess) amongst articles. To provide a superior non-invasive methodology for continuous glucose monitoring in blood, we must overcome the interferences of complexed spectrum data and experimental design limitations (e.g. measurement method and Raman Spectroscopy's spec).
+A further important factor is the location of the measurement. 
+As prospective measuring sites, the forearm (Enejder et al., 2005; Scholtes-Timmerman, Bijlsma, Fokkert, Slingerland, and Veen, 2014), thenar (Lundsgaard-Nielsen and al., 2018), and nail fold (Li et al., 2019) have been chosen. 
+While González Viveros et al. (2022) found that the forearm is the most effective location when compared to the wrist and index finger, it is unclear which site is the best owing to differences in equipment, parameters, and technique (e.g., how to preprocess) amongst articles. 
+To provide a superior non-invasive methodology for continuous glucose monitoring in blood, we must overcome the interferences of complexed spectrum data and experimental design limitations (e.g. measurement method and Raman Spectroscopy's spec).
 
-This study will expand on past work by (1) verifying the use of Raman scatterings for measuring blood glucose and (2) calibrating spectral data of blood, glucose solution, and skin (prospective measurement sites). All of this lays the groundwork for the development of the first wearable (continuous, non-invasive, ubiquitous) Raman-based self-monitoring blood glucose (SMBG) device, particularly for everyday users and intended for wider usage.
+This study will expand on past work by (1) verifying the use of Raman scatterings for measuring blood glucose and (2) calibrating spectral data of blood, glucose solution, and skin (prospective measurement sites). 
+All of this lays the groundwork for the development of the first wearable (continuous, non-invasive, ubiquitous) Raman-based self-monitoring blood glucose (SMBG) device, particularly for everyday users and intended for wider usage.
 
 
 \section{Statement of the Problem}
-The effective measurement locations are yet unknown. It is difficult to compare prior findings due to methodological variations. Furthermore, previous research had problematic technique, i.e., it may be stated that the high accuracy of glucose prediction is due to the utilization of the complete spectrum, which may contain unintentionally linked signal aberrations with hyperglycemia (Kang et al., 2020). There have been five successful measurements on the human body. However, the same approach was used to compare only the wrist, fingertip, and forearm (González Viveros et al., 2022). The nail fold is a suitable measurement site because the laser may easily enter the microvessel in the dermis due to its thin epidermal layer (Li et al., 2019). Thenar has been selected as a measurement location for a portable Raman-based SMBG instrument (Lundsgaard-Nielsen et al., 2018). Using the direct measurement of glucose technology, this study tries to determine the greatest correlation between glucose fingerprint and glycemic control (Kang et al., 2020).
-\\
-Proper feature engineering is still being researched. Previous studies, in particular, relied heavily on two distinct methodologies. The first method employs statistical analysis on full spectrum data, together with extra preprocessing such as dimension reduction or feature significance (Enejder et al., 2005; González Viveros et al., 2022; Li et al., 2019; Scholtes-Timmerman et al., 2014). The second way is to normalize the spectrum using either the hemoglobin peak (1549 $cm^-1$) (Shao et al., 2012) or the protein and lipid peak (1450 $cm^-1$) (Kang et al., 2020) and then handpick a smaller group of spectra for modeling (Kang et al., 2020; Shao et al., 2012). The purpose of this study is to compare these two methodological techniques on human beings.
-\\
-There has been no effort on the creation of wearable Raman-based SMBG. There are various hurdles to developing wearables. In terms of measurement sites, the wrist is the best option since it can be easily integrated in a commonly used platform (smart band/watch). This option has the most pervasiveness but the lowest accuracy. A similar scenario exists in modeling. A more sophisticated model may match the data more correctly in exchange for efficiency. This effort aims to construct a wearable Raman-based SMBG for everyday usage in order to obtain CGM and to assess the amount of offerings required to reach this goal.
+
+The effective measurement locations are yet unknown. 
+It is difficult to compare prior findings due to methodological variations. 
+Furthermore, previous research had problematic technique, i.e., it may be stated that the high accuracy of glucose prediction is due to the utilization of the complete spectrum, which may contain unintentionally linked signal aberrations with hyperglycemia (Kang et al., 2020). 
+There have been five successful measurements on the human body. 
+However, the same approach was used to compare only the wrist, fingertip, and forearm (González Viveros et al., 2022). 
+The nail fold is a suitable measurement site because the laser may easily enter the microvessel in the dermis due to its thin epidermal layer (Li et al., 2019). 
+Thenar has been selected as a measurement location for a portable Raman-based SMBG instrument (Lundsgaard-Nielsen et al., 2018). 
+Using the direct measurement of glucose technology, this study tries to determine the greatest correlation between glucose fingerprint and glycemic control (Kang et al., 2020).
+
+Proper feature engineering is still being researched. 
+Previous studies, in particular, relied heavily on two distinct methodologies. 
+The first method employs statistical analysis on full spectrum data, together with extra preprocessing such as dimension reduction or feature significance (Enejder et al., 2005; González Viveros et al., 2022; Li et al., 2019; Scholtes-Timmerman et al., 2014). 
+The second way is to normalize the spectrum using either the hemoglobin peak (1549 $\text{cm}^{-1}$) (Shao et al., 2012) or the protein and lipid peak (1450 $\text{cm}^{-1}$) (Kang et al., 2020) and then handpick a smaller group of spectra for modeling (Kang et al., 2020; Shao et al., 2012). 
+The purpose of this study is to compare these two methodological techniques on human beings.
+
+There has been no effort on the creation of wearable Raman-based SMBG. 
+There are various hurdles to developing wearables. In terms of measurement sites, the wrist is the best option since it can be easily integrated in a commonly used platform (smart band/watch). 
+This option has the most pervasiveness but the lowest accuracy. 
+A similar scenario exists in modeling. 
+A more sophisticated model may match the data more correctly in exchange for efficiency. 
+This effort aims to construct a wearable Raman-based SMBG for everyday usage to obtain CGM and to assess the amount of offerings required to reach this goal.
 
 
 \section{Objectives}
 
 This work has been divided into four studies. 
+
 \subsection{Study 1: Measuring spectral data of solution}
+
 \textbf{Objective:} To validate spectral data from blood and glucose solutions at different concentrations.
-\\
+
 \textbf{Independent Variables:}
-\\(a) Distilled water
-\\(b) Glucose solution
-\\(c) Blood 
-\\(d) Blood with OGTT
-\\(e) Background noises (e.g. sample slide, air)
-\\
-\textbf{Dependent Variables:} The most accurate direct measurement of glucose spectra ($1125cm^{-1}$)
-\\
+
+\begin{enumerate}
+    \item Distilled water
+    \item Glucose solution
+    \item Blood 
+    \item Blood with OGTT
+    \item Background noises (e.g. sample slide, air)
+\end{enumerate}
+
+\textbf{Dependent Variables:} The accurate direct measurement of glucose spectra \( 1125 \text{cm}^{-1} \)
+
+
 \textbf{Outcome:} The most accurate direct measurement of interested compounds spectra.
 
 \subsection{Study 2: Measuring spectral data of skin}
+
 \textbf{Objective:} To study the measuring sites
-\\
+
+
 \textbf{Independent Variables:} Measuring sites are divided as below
-\\(a) Wrist
-\\(b) Forearm
-\\(c) Index fingertip
-\\(d) Index nail fold
-\\(e) Thenar
-\\
-\textbf{Dependent Variables:} The most accurate direct measurement of glucose spectra ($1125cm^{-1}$)
-\\
+
+\begin{enumerate}
+    \item Wrist
+    \item Forearm
+    \item Index fingertip
+    \item Index nail fold
+    \item Thenar
+\end{enumerate}
+
+\textbf{Dependent Variables:} The accurate direct measurement of glucose spectra  \( 1125 \text{cm}^{-1} \)
+
+
 \textbf{Outcome:} Ranking of measuring sites
 
 \subsection{Study 3: Feature Engineering}
+
 \textbf{Objective:} Evaluate the impact of feature engineering and selection.
-\\
+
 \textbf{Independent Variables:} 
-\\1. Feature Engineering technique
-\\(a) No engineering
-\\(b) PCA (baseline)
-\\(c) Normalization with protein and lipid peak ($1450 cm^-1$)
-\\(d) Normalization with hemoglobin peak ($1549 cm^-1$)
-\\
-\\2. Feature selection and modeling
-\\(a) Full spectrum + PLS (baseline)
-\\(b) single $1125 cm^-1$ peak + LR
-\\(c) 911, 1060, 1125 $cm^-1$ peak + MLR
-\\
+
+\begin{enumerate}
+    \item Feature Engineering technique
+    \begin{enumerate}
+        \item No engineering
+        \item PCA (baseline)
+        \item Normalization with protein and lipid peak \( 1450 \text{cm}^{-1} \)
+        \item Normalization with hemoglobin peak ($1549 \text{cm}^{-1}$)
+    \end{enumerate}
+    \item Feature selection and modeling
+    \begin{enumerate}
+        \item Full spectrum + PLS (baseline) 
+        \item single $1125 \text{cm}^{-1}$ peak + LR 
+        \item 911, 1060, 1125 $\text{cm}^{-1}$ peak + MLR 
+    \end{enumerate}
+\end{enumerate}
+
+
 \textbf{Dependent Variables:} Glycemic spectra
-\\
+
 \textbf{Outcome:} The influence of feature engineering, selection, and modeling on predictive accuracy.
-\\
+
 \subsection{Study 4: Designing and developing wearable Raman-based SMBG}
-\\
+
 \textbf{Objective:} Design and develop a prototype of a wearable Raman-based SMBG.
-\\
+
 \textbf{Outcome:} A prototype
-\\
+
 \subsection{Study 5: Device Evaluation}
 \textbf{Objective:} To evaluate the prototype by repeat section 1.3.3 experiment with the prototype.
-\\
+
 \textbf{Dependent Variable:} Glycemic
-\\
+
 \textbf{Outcome:} Prototype achieves glycemic prediction correlation $R^2$ > 0.8 with actual glycemic.
 
 
