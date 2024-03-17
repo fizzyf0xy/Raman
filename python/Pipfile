@@ -8,6 +8,7 @@ ipykernel = "*"
 rampy = "*"
 gcvspline = "*"
 cvxpy = "*"
+pydantic = "*"
 
 [dev-packages]
 
