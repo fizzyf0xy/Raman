@@ -28,12 +28,13 @@
 				"znck.grammarly"
 			]
 		}
-	}
+	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "docker --version",
+	// "postCreateCommand": "git clone https://github.com/fizzyf0xy/Raman.wiki.git"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"

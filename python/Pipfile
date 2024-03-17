@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 ipykernel = "*"
+rampy = "*"
+gcvspline = "*"
+cvxpy = "*"
 
 [dev-packages]
 

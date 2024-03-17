@@ -30,15 +30,19 @@ ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
 
+
+# error: extension 'gcvspline._gcvspl' has Fortran sources but no Fortran compiler found
+RUN apt install -y gfortran
+
 # pipenv
 RUN pip install --upgrade pip
 RUN pip install pipenv
+
 
 # # Export Jupyter into PDF
 # RUN apt install -y texlive-xetex texlive-fonts-recommended texlive-plain-generic
 # RUN apt install -y pandoc
 
-# RUN apt clean
-# RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
+RUN apt clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 CMD sleep infinity
