@@ -9,6 +9,8 @@ rampy = "*"
 gcvspline = "*"
 cvxpy = "*"
 pydantic = "*"
+dsatools = "*"
+scipy = "*"
 
 [dev-packages]
 

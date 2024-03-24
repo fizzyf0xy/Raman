@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cd7d55b648f833fc636fb376384fbfefca0b760a7391905e3e9004248cf0fca5"
+            "sha256": "0e8c663def9413f10f0ce7bb3d4a2912f12cada7f08366b116e49e77ded2f27e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -174,6 +174,14 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==5.1.1"
+        },
+        "dsatools": {
+            "hashes": [
+                "sha256:5985ee64dd212b13f50639549dcc8efa011de5e826c6c7aa9a17f56f23ec97b1",
+                "sha256:aaf8810f410baa3e4444ea5371e65ffc8b5be1c6d5bc89ecd64fd39e1700dcbb"
+            ],
+            "index": "pypi",
+            "version": "==0.1.95"
         },
         "ecos": {
             "hashes": [
@@ -1072,6 +1080,7 @@
                 "sha256:f313b39a7e94f296025e3cffc2c567618174c0b1dde173960cf23808f9fae4be",
                 "sha256:f3cd9e7b3c2c1ec26364856f9fbe78695fe631150f94cd1c22228456404cf1ec"
             ],
+            "index": "pypi",
             "markers": "python_version >= '3.9'",
             "version": "==1.11.4"
         },
@@ -1118,11 +1127,11 @@
         },
         "threadpoolctl": {
             "hashes": [
-                "sha256:5dac632b4fa2d43f42130267929af3ba01399ef4bd1882918e92dbc30365d30c",
-                "sha256:6155be1f4a39f31a18ea70f94a77e0ccd57dced08122ea61109e7da89883781e"
+                "sha256:8f4c689a65b23e5ed825c8436a92b818aac005e0f3715f6a1664d7c7ee29d262",
+                "sha256:f11b491a03661d6dd7ef692dd422ab34185d982466c49c8f98c8f716b5c93196"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==3.3.0"
+            "version": "==3.4.0"
         },
         "tornado": {
             "hashes": [
