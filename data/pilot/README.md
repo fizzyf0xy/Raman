@@ -12,3 +12,18 @@ Please note that each OGTT experiment do not have the save number of data points
 
 - `s1` has 26 data points of both Raman and glycemic.
 - `s2` has 32 data points of Raman and 11 of glycemic.
+
+
+The raman is collected with this configuration
+
+| Item             | Parameter     |
+|------------------|---------------|
+| Laser wavelength | 785 nm        |
+| Laser Power      | 10.0 / 358 mW |
+| Lens             | 10x           |
+| Slit width       | 0.625 mm      |
+| Grating          | 600           |
+| Exposure         | 60 s          |
+| Accumuation      | 1             |
+
+Measurement site is the tip of index, middle, or ring finger of either left or right hand.
