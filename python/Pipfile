@@ -12,6 +12,7 @@ pydantic = "*"
 dsatools = "*"
 scipy = "*"
 peakutils = "*"
+scikit-learn = "*"
 
 [dev-packages]
 
