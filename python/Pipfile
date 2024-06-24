@@ -13,6 +13,8 @@ dsatools = "*"
 scipy = "*"
 peakutils = "*"
 scikit-learn = "*"
+lmfit = "*"
+pybaselines = "*"
 
 [dev-packages]
 

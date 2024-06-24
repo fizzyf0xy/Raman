@@ -10,3 +10,5 @@
 *.toc
 .venv
 data/pilot/*
+
+.DS_STORE
